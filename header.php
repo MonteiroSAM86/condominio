@@ -8,19 +8,41 @@
 </head>
 <body>
     
-    <header>
-        <nav class="nav-header-main">
-            <a class="header-logo" href="#">
+    <header id="header"> 
+        <nav id="nav">
+            <a class="nav__brand" href="#">
                 <img src="img/logo.png" alt="logo">
             </a>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Contact</a></li>
+               <!-- Menu Open -->
+            <div class="nav__icons open"><i class="ion icon-md-menu"></i></div>
+                <!-- Nav List -->
+            <ul class="nav__list">
+                <!-- Menu Close -->
+                <div class="menu__icons close"><i class="icon ion-md-close"></i></div>
+                <li class="nav__item"><a href="index.php" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index2.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="index3.html" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index4.html" class="nav__link">Contact</a></li>
             </ul>
         </nav>
-        <nav>
+        <!-- Login -->
+        <div class="form">
+            <form class="login" action="includes/login.inc.php" method="post">
+                <input type="text" name="mailuid" placeholder="Username/email..." >
+                <input type="text" name="pwd" placeholder="Password">
+                <!-- Login Button -->
+                <button class="btn__login" type="submit" name="login-submit">Login</button>
+            </form>
+        <!-- Signup -->
+        <a href="signup.php">Signup</a>
+        <!-- Logout -->
+            <form class="logout"  action="includes/logout.inc.php" method="post">
+            <!-- Logout Button -->
+            <button class="btn__logout" type="submit" name="logout-submit">Logout</button>
+            </form>
+        </div>   
+        <!--  
+        <nav>    
         <div class="header-login">
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="Username/E-mail...">
@@ -31,8 +53,8 @@
             <form action="includes/logout.inc.php" method="post">
                 <button type="submit" name="logout-submit">Logout</button>
             </form>
-        </div>
-        </nav>
+        </div>  
+        </nav>-->  
     </header>
 </body>
 </html>
