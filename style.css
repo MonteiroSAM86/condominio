@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+SC|Arbutus+Slab|Bree+Serif|Cinzel|Cormorant+Garamond|Crete+Round|DM+Serif+Text|Domine|Nanum+Myeongjo|Neuton|Playfair+Display+SC|Solway|Ultra|Vidaloka|Zilla+Slab&display=swap");
+
+*,
+*::before,
+*::after {
+ padding: 0;
+ margin: 0;
+ box-sizing: inherit;
+}
+
+:root {
+ /* fonts */
+
+ --bree-serif: "Bree Serif", serif;
+ --solway-serif: "Solway", serif;
+ --crete-round: "Crete Round", serif;
+ --domine-serif: "Domine", serif;
+ --cinzel-serif: "Cinzel", serif;
+ --cormorant-garamond: "Cormorant Garamond", serif;
+ --zilla-slab: "Zilla Slab", serif;
+ --nanum-serif: "Nanum Myeongjo", serif;
+ --vidaloka: "Vidaloka", serif;
+ --neuton: "Neuton", serif;
+ --playfair: "Playfair Display SC", serif;
+ --ultra-serif: "Ultra", serif;
+ --arbutus-slab: "Arbutus Slab", serif;
+ --dm-serif: "DM Serif Text", serif;
+ --alegreya: "Alegreya SC", serif;
+
+ /* Coolors */
+
+ --mellow-yellow: #f3e37c;
+ --sandstorm: #f3d34a;
+ --neon-carrot: #eea243;
+ --neon-carrot2: #f3a738;
+ --tuscan: #f1d9a7;
+ --tuscanny: #c89f9c;
+ --copper-penny: #b36a5e;
+ --platinum: #eee2df;
+ --sasquatch: #ff4d80;
+ --coral-red: #ff3e41;
+ --deep-cerise: #df367c;
+ --burgundy: #780116;
+ --flame: #d8572a;
+ --int-orange: #c32f27;
+ --jet: #3a3335;
+ --dog-rose: #d81e5b;
+ --papaya-whip: #fdf0d5;
+ --catawba: #773344;
+ --pastel-pink: #e3b5a4;
+ --alabaster: #f5e9e2;
+ --maastricht-blue: #022b3a;
+ --metal-sea: #1f7a8c;
+ --pale-aqua: #bfdbf7;
+ --rich-maroon: #b8336a;
+ --gray-magenta: #c490d1;
+ --blu-purple: #acacde;
+ --white: #ffffff;
+ --orange: #de7c01;
+ --light-blue: #0090d9;
+ --green: #00b298;
+ --black: #000;
+}
+
+/* Universal Styles */
+
+html {
+ font-size: 10px;
+ background: var(--alabaster);
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+.btn {
+ border-radius: 2rem;
+ padding: 1rem 2rem;
+ background-color: var(--maastricht-blue);
+ color: var(--alabaster);
+ display: inline-block;
+ margin-top: 2rem;
+ text-align: center;
+ font-size: 1rem;
+ letter-spacing: 0.1rem;
+ text-transform: uppercase;
+ transition: 420ms ease;
+}
+
+.btn:hover {
+ background-color: var(--alabaster);
+ color: var(--maastricht-blue);
+ border: 1px solid var(--maastricht-blue);
+}
+
+section {
+ padding: 5rem 0;
+}
+
+body {
+ font-family: var(--crete-round);
+}
+
+/* Header */
+
+header {
+ width: 100%;
+ height: 9rem;
+ background: var(--metal-sea);
+ display: flex;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+.container {
+ width: 100%;
+ max-width: 98rem;
+ padding: 0 1.5rem;
+ margin: 0 auto;
+}
+
+.nav__brand {
+ width: 15rem;
+}
+
+nav {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ padding: 0 1rem;
+}
+
+.menu__icons {
+ font-size: 3.5rem;
+ color: var(--alabaster);
+ cursor: pointer;
+ transition: 420ms ease;
+ display: none;
+}
+
+.menu__icons:hover {
+ color: var(--flame);
+}
+
+@media screen and (min-width: 1200px) {
+ .nav__list {
+ display: flex;
+ align-items: center;
+ margin-left: 3rem;
+}
+
+
+
+.nav__item {
+ margin: 0 2rem;
+}
+
+.nav__link {
+ color: var(--alabaster);
+ font-size: 1.6rem;
+ transition: 420ms ease;
+}
+
+.nav__link:hover {
+ color: var(--flame);
+}}
+
+
+/*
+
+.nav__list {
+ width: 25rem;
+ height: 100vh;
+ background: var(--sasquatch);
+ position: fixed;
+ top: 0;
+ right: 0;
+ opacity: 1;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ transition: all 630ms ease-in-out, opacity 810ms ease;
+ z-index: 1300;
+}
+
+.nav__list.active {
+ right: 0;
+ opacity: 1;
+}
+
+.close {
+ position: absolute;
+ top: 2rem;
+ left: 2rem;
+}
+
+.nav__item {
+ margin: 2rem 0;
+}
+
+.nav__link {
+ font-size: 1.6rem;
+ color: var(--alabaster);
+ text-transform: uppercase;
+ transition: 420ms ease;
+}
+
+
+@media screen and (min-width: 600px) {
+
+ .nav__list {
+  width: initial;
+  height: initial;
+  background: transparent;
+  position: initial;
+  top: initial;
+  right: initial;
+  opacity: initial;
+  flex-direction: row;
+  transition: initial;
+ }
+
+}
+
+*/
+
+
+
+
+
+/* Forms */
+
+.form {
+ width: 100%;
+ max-width: 80rem;
+ display: flex;
+ align-items: center;
+}
+
+.form a {
+ font-size: 2rem;
+ text-transform: uppercase;
+ color: var(--alabaster);
+ padding: 1rem;
+}
+
+.form input {
+ display: block;
+ margin: 0 auto;
+ padding: 10px;
+ border: 1px solid #ccc;
+ font-size: 16px;
+ border-radius: 4px 0 0 4px;
+ box-sizing: border-box;
+ width: 20rem;
+ float: left;
+}
+
+.btn__login, .btn__logout {
+ border: 1px solid #9361bf;
+ background: #9361bf;
+ padding: 10px 20px;
+ font-size: 16px;
+ display: inline-block;
+ margin: 0;
+ border-radius: 0 4px 4px 0;
+ cursor: pointer;
+ width: 100px;
+ margin: 0 auto;
+ border-left: 0;
+ color: white;
+}
+
+.btn__login {
+}
+
+.form input:after {
+ content: "";
+ display: block;
+ clear: both;
+}
+
+/*  Main */ 
+
+main {
+ width: 100%;
+ height: 80vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 10rem;
+}
+
+main h1 {
+ font-size: 4rem;
+ margin: 3rem;
+}
+
+/* Section Default */
+
+.wrapper__main {
+ width: 100%;
+ max-width: 25rem;
+ height: 30vh;
+}
+
+.section__default {
+ width: 100%;
+ height: 80vh;
+ padding: 9rem 0;
+ margin: 0 auto;
+}
+
+.section__default h1 {
+ font-size: 4rem;
+ text-transform: uppercase;
+ color: var(--alabaster);
+ padding: 1rem;
+}
+
+.form__default {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background: var(--dog-rose);
+ padding: 2rem;
+ border-radius: .5rem;
+}
+
+.form__default input {
+ display: block;
+ margin: .5rem auto;
+ padding: 10px;
+ border: 1px solid #ccc;
+ font-size: 16px;
+ border-radius: 4px 0 0 4px;
+ box-sizing: border-box;
+ width: 20rem;
+ float: left;
+}
+
+.default__btn {
+ border: 1px solid #9361bf;
+ background-color: #9361bf;
+ padding: 10px 20px;
+ font-size: 16px;
+ display: inline-block;
+ margin: 0;
+ border-radius: 0 4px 4px 0;
+ cursor: pointer;
+ width: 100px;
+ margin: 0 auto;
+ border-left: 0;
+ color: white;
+ transition: 420ms ease;
+}
+
+.default__btn:hover {
+ background-color: transparent;
+ border: 2px solid #9361bf;
+ color: var(--maastricht-blue);
+}
+
+.btn__login {
+}
+
+.form input:after {
+ content: "";
+ display: block;
+ clear: both;
+}
+
